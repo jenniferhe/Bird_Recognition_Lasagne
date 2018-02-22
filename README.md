@@ -1,5 +1,7 @@
 # BirdID_lasagne
 
+此项目是依据一个鸟类图片数据库实现的基于Lasagne神经网络完成的图像识别项目。将9种不同鸟类进行训练使计算机学会区分鸟类图片。
+
 Bird image classification using convolutional neural networks in Python
 
 ![Sample Bird Images](http://i.imgur.com/R2rdTBe.png)
@@ -20,7 +22,7 @@ The folder with the images to classify has to be structured as such:
     |    |-- class3
         ...
     |    └-- classN
-  
+
 
 Two kinds of python files are provided here: Configuration and Training
 
@@ -77,7 +79,7 @@ The script used for hyperparameter optimization is included, see optimize.py
 
 
 ### sx3_ffc_b32.py:
-This architecture was chosen for optimization, because (1) it ran in a reasonable amount of time on both the CPU and GPU (2) achieved over 90% accuracy easily wih un-optimized hyperparameters.
+**This architecture was chosen for optimization, because (1) it ran in a reasonable amount of time on both the CPU and GPU (2) achieved over 90% accuracy easily wih un-optimized hyperparameters.**
 
 After many trials of optimization, the chosen learning rate update algorithm was adam and the chosen initial learning rate was 0.0007.
 
